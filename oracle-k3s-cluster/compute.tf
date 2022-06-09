@@ -50,7 +50,7 @@ resource "oci_core_instance" "server_2" {
   source_details {
     source_id               = var.image_ocid
     source_type             = local.source_type
-    boot_volume_size_in_gbs = local.server_instance_config_2.boot_volume
+    boot_volume_size_in_gbs = local.server_instance_config_1.boot_volume
   }
   shape_config {
     memory_in_gbs = local.server_instance_config_1.ram
