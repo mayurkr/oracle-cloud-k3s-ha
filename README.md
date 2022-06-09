@@ -1,6 +1,8 @@
 # Oracle Cloud Infrastructure k3s Cluster
 
-This is a Terraform project that helps you to deploy a fault tolerant and production grade Kubernetes cluster on Oracle Cloud without spending a dime.
+This Terraform project helps you deploy a fault-tolerant and production-grade Kubernetes cluster on Oracle Cloud without spending a dime.
+
+You need to signup for an OCI account for this project. The entire Kubernetes cluster is built using Free tier resources.
 
 Create `terraform.tfvars` as follows:
 
