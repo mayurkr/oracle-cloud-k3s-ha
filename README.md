@@ -4,7 +4,9 @@ This Terraform project helps you deploy a fault-tolerant and production-grade Ku
 
 You need to signup for an OCI account for this project. The entire Kubernetes cluster is built using Free tier resources.
 
-Create `terraform.tfvars` as follows:
+Step 1: Clone this git repo on your local system
+
+Step 2: Create `terraform.tfvars` as follows:
 
     fingerprint         = "add me"  # Oracle Cloud Configuration
     private_key_path    = "add me"  # Oracle Cloud Configuration
@@ -16,6 +18,11 @@ Create `terraform.tfvars` as follows:
     image_ocid          = "add me"  # Added the Latest Image OCID for Ubuntu aarch64
     cluster_name        = "add me"  # Cluster name (it will be appended as a prefix to your resources)
     ssh_whitelist       = "add me"  # You public IP block to whitelist SSH and KubeAPI access. Example: 1.2.3.4/32
+
+Step 3: Once you have successfully created the `terraform.tfvars` run the following commands to deploy your resources:
+
+    teraform init
+    terraform apply
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
