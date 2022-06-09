@@ -1,5 +1,19 @@
-# oracle-cloud-k3s-ha
-Terraform project to deploy a fault tolerant and production grade Kubernetes cluster on Oracle Cloud without spending a dime.
+# Oracle Cloud Infrastructure k3s Cluster
+
+This is a Terraform project that helps you to deploy a fault tolerant and production grade Kubernetes cluster on Oracle Cloud without spending a dime.
+
+Create `terraform.tfvars` as follows:
+
+    fingerprint         = "add me"  # Oracle Cloud Configuration
+    private_key_path    = "add me"  # Oracle Cloud Configuration
+    user_ocid           = "add me"  # Oracle Cloud Configuration
+    tenancy_ocid        = "add me"  # Oracle Cloud Configuration
+    compartment_id      = "add me"  # Oracle Cloud Configuration
+    region              = "add me"  # Oracle Cloud Configuration
+    ssh_authorized_keys = ["add me"] # Add your Public SSH key
+    image_ocid          = "add me"  # Added the Latest Image OCID for Ubuntu aarch64
+    cluster_name        = "add me"  # Cluster name (it will be appended as a prefix to your resources)
+    ssh_whitelist       = "add me"  # You public IP block to whitelist SSH and KubeAPI access. Example: 1.2.3.4/32
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
